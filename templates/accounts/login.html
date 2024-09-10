@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+
+{% load static %}
+
+{% block title %} Login {% endblock title %}
+
+{%block content%}
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+    <input type='submit' value="Tizimga kirish! ">
+
+    </form> 
+
+    <a href="{% url 'accounts:passwordreset' %}">Parolingz esdan chiqdimi?  </a> | 
+
+{%endblock content%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
